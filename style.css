@@ -251,35 +251,24 @@ ion-icon {
 .card a:hover {
 	color: #ff5f6d;
 }
+
 /* Section-Contact */
 
 .contact-container {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1.8fr 1.2fr;
-
-	justify-content: center;
+	background-image: linear-gradient(#000428, #004e92);
 }
 
 .contact-img {
-	background-image: linear-gradient(#000428, #004e92);
 	background-size: cover;
+	height: 100%;
+	width: 50%;
 }
 
 .contact-text {
 	padding: 5rem;
-	background-image: linear-gradient(#000428, #004e92);
-}
-.direct-email a {
-	text-decoration: none;
-	border-bottom: 2px solid #fff;
-}
-.direct-email a h3 {
-	padding: 0;
-	border-bottom: 2px solid #fff;
-	margin-bottom: 2rem;
-	font-size: 3rem;
-	cursor: pointer;
 }
 
 form {
@@ -292,19 +281,19 @@ form {
 }
 label {
 	display: inline-block;
-	font-size: 3rem;
-	color: inherit;
+	font-size: 2.3rem;
+
 	font-family: inherit;
-	font-weight: 600;
+	font-weight: 300;
 	color: #fff;
 }
 
 textarea,
 input {
 	width: 100%;
-	padding: 1.6rem 1.5rem;
+	padding: 1rem 1.5rem;
 	font-family: inherit;
-	font-size: 2.3rem;
+	font-size: 1.8rem;
 	border-radius: 10px;
 	border: 1px solid transparent;
 	margin-bottom: 2rem;
@@ -313,7 +302,7 @@ input {
 .contact-iconn {
 	background: none;
 	border: none;
-	background-color: #004e92;
+	background-color: #ff5f6d;
 	font-weight: 600;
 	font-size: 2.2rem;
 	padding: 1rem 4.5rem;
@@ -325,8 +314,8 @@ input {
 	-o-border-radius: 12px;
 }
 .contact-iconn:hover {
-	background-color: #004e92;
-	box-shadow: 0 0.5rem 1rem #777;
+	background-color: #005592;
+	box-shadow: 0 0.5rem 1rem #652b01;
 	transform: translateY(-2px);
 	-webkit-transform: translateY(-2px);
 	-moz-transform: translateY(-2px);
@@ -336,13 +325,14 @@ input {
 
 /* Footer */
 .footer-container {
-	background-color: rgb(3, 16, 88);
+	background-color: #004e92;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 3rem;
-	padding: 5rem 0;
+	gap: 2rem;
+	padding: 2rem 0;
+	border-top: 0.1px solid #032039;
 }
 
 .footer-container a {
@@ -350,26 +340,26 @@ input {
 }
 
 .footer-name {
-	font-size: 2.3rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	color: #fff;
 }
 .footer-header {
 	font-size: 2.5rem;
-	font-weight: 600;
+	font-weight: 6´200;
 	text-transform: uppercase;
 	color: #fff;
 }
 .footer-icons {
 	display: flex;
-	gap: 3rem;
+	gap: 2rem;
 }
 .footer-icons a {
 	font-size: 3rem;
 	color: #fff;
 }
 .copyright {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	letter-spacing: 0.5px;
 	color: rgb(194, 187, 187);
 }
