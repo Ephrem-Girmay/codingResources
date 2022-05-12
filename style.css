@@ -23,6 +23,12 @@ h3 {
 	color: #004e92;
 	text-align: center;
 }
+
+h3 ion-icon {
+	font-size: 3.1rem;
+	color: #004e92;
+	margin-bottom: 1rem;
+}
 h4 {
 	font-size: 2rem;
 	font-weight: 600;
@@ -202,7 +208,12 @@ ion-icon {
 }
 
 /*Section*/
-
+.titlt-image {
+	width: 5rem;
+	margin: 0 auto;
+	display: flex;
+	margin-bottom: 2rem;
+}
 .section {
 	background-color: rgb(240, 241, 246);
 	min-height: 60vh;
@@ -246,20 +257,18 @@ ion-icon {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1.8fr 1.2fr;
-	max-width: 130rem;
-	justify-content: center;
 
-	box-shadow: 0 0 2.2rem rgb(126, 121, 121);
+	justify-content: center;
 }
 
 .contact-img {
-	background-image: linear-gradient(#ff5f6d, #ffc371);
+	background-image: linear-gradient(#000428, #004e92);
 	background-size: cover;
 }
 
 .contact-text {
 	padding: 5rem;
-	background-image: linear-gradient(#ff5f6d, #ffc371);
+	background-image: linear-gradient(#000428, #004e92);
 }
 .direct-email a {
 	text-decoration: none;
@@ -271,11 +280,6 @@ ion-icon {
 	margin-bottom: 2rem;
 	font-size: 3rem;
 	cursor: pointer;
-}
-.or h3 {
-	margin-left: 5rem;
-	margin-bottom: 2rem;
-	padding: 0;
 }
 
 form {
@@ -306,14 +310,10 @@ input {
 	margin-bottom: 2rem;
 }
 
-/* .form-btn {
-	background-color: rgb(220, 78, 17);
-	font-weight: 600;
-} */
 .contact-iconn {
 	background: none;
 	border: none;
-	background-color: rgb(220, 78, 17);
+	background-color: #004e92;
 	font-weight: 600;
 	font-size: 2.2rem;
 	padding: 1rem 4.5rem;
@@ -325,7 +325,7 @@ input {
 	-o-border-radius: 12px;
 }
 .contact-iconn:hover {
-	background-color: rgb(251, 108, 46);
+	background-color: #004e92;
 	box-shadow: 0 0.5rem 1rem #777;
 	transform: translateY(-2px);
 	-webkit-transform: translateY(-2px);
@@ -336,7 +336,7 @@ input {
 
 /* Footer */
 .footer-container {
-	background-color: rgb(17, 15, 15);
+	background-color: rgb(3, 16, 88);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
