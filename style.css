@@ -106,6 +106,11 @@ html {
 	display: flex;
 }
 
+.text-box img {
+	width: 10rem;
+	height: 10rem;
+}
+
 h1 {
 	font-size: 4.5rem;
 	font-family: "Poppins", sans-serif;
@@ -255,23 +260,26 @@ ion-icon {
 /* Section-Contact */
 
 .contact-container {
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1.8fr 1.2fr;
+	display: flex;
 	background-image: linear-gradient(#000428, #004e92);
+	flex-direction: row;
+	justify-content: center;
+	gap: 6rem;
 }
 
 .contact-img {
 	background-size: cover;
-	height: 100%;
-	width: 50%;
+	width: 25%;
 }
 
 .contact-text {
 	padding: 5rem;
+
+	width: 40%;
 }
 
 form {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -302,7 +310,7 @@ input {
 .contact-iconn {
 	background: none;
 	border: none;
-	background-color: #ff5f6d;
+	background-color: #3490dc;
 	font-weight: 600;
 	font-size: 2.2rem;
 	padding: 1rem 4.5rem;
@@ -324,15 +332,25 @@ input {
 }
 
 /* Footer */
-.footer-container {
-	background-color: #004e92;
+footer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+	padding: 2rem 0;
+	justify-content: space-evenly;
+	background-color: #004e92;
+	border-top: 0.1px solid #032039;
+}
+footer img {
+	width: 6rem;
+	height: 6rem;
+}
+.footer-container {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
 	padding: 2rem 0;
-	border-top: 0.1px solid #032039;
 }
 
 .footer-container a {
@@ -346,7 +364,7 @@ input {
 }
 .footer-header {
 	font-size: 2.5rem;
-	font-weight: 6´200;
+	font-weight: 200;
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -362,6 +380,9 @@ input {
 	font-size: 1.4rem;
 	letter-spacing: 0.5px;
 	color: rgb(194, 187, 187);
+	background-color: #004e92;
+	width: 100%;
+	text-align: center;
 }
 
 ion-icon {
