@@ -8,9 +8,6 @@
 	justify-content: space-between;
 }
 
-h1 {
-	color: #fff;
-}
 h2 {
 	font-size: 5rem;
 	font-weight: 700;
@@ -64,83 +61,44 @@ html {
 	line-height: 1;
 }
 
-.logo-img {
-	height: 40px;
-	margin-right: 6px;
-}
-.logo-img:hover {
-	animation: spin 1s linear infinite;
-	-webkit-animation: spin 2s linear infinite;
-}
-@keyframes spin {
-	100% {
-		transform: rotate(360deg) translateY(0);
-		-webkit-transform: rotate(360deg) translateY(0);
-		-moz-transform: rotate(360deg) translateY(0);
-		-ms-transform: rotate(360deg) translateY(0);
-		-o-transform: rotate(360deg) translateY(0);
-	}
-}
-
 /* Hero section */
 .section-hero {
 	background-image: url(img/ephrem.png), linear-gradient(#000428, #004e92);
 	background-size: cover;
 
 	height: 70vh;
-	background-attachment: fixed;
-}
-.hero-text {
-	max-width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1rem;
-	align-items: center;
-	height: 100%;
-}
-.text-box {
+
 	flex-direction: column;
-	align-items: flex-start;
-	padding-left: 9rem;
-	gap: 5rem;
-
-	display: flex;
 }
 
-.text-box img {
-	width: 10rem;
-	height: 10rem;
+.section-hero img {
+	width: 20rem;
+	height: 20rem;
+	top: 40%;
+	left: 10%;
 }
 
 h1 {
 	font-size: 4.5rem;
 	font-family: "Poppins", sans-serif;
 	line-height: 1.2;
-	font-weight: 700;
-	letter-spacing: -3px;
-	max-width: 80rem;
-	animation: moveinright ease-in 1.5s;
-	animation-fill-mode: forwards;
-	-webkit-animation: moveinright ease-in 1.5s;
+	font-weight: 500;
+	letter-spacing: -1px;
+	margin-bottom: 2rem;
+	max-width: 70%;
+	color: #fff;
+	left: 25%;
+	position: absolute;
+	top: 40%;
 }
 
-.h1-left {
-	animation: moveinleft ease-in 1.5s;
-	animation-fill-mode: forwards;
-	-webkit-animation: moveinleft ease-in 1.5s;
-}
-.h1-right {
-	animation: moveinleft ease-in 1.5s;
-	animation-fill-mode: forwards;
-	-webkit-animation: moveinleft ease-in 1.5s;
-}
-.text-box p {
+.section-hero p {
 	font-size: 2.2rem;
 	color: #fff;
 	line-height: 1.5;
 	max-width: 80rem;
-	animation: moveinleft ease-in 1.5s;
-	animation-fill-mode: forwards;
-	-webkit-animation: moveinleft ease-in 1.5s;
+	top: 30%;
+	left: 25%;
 }
 
 header {
