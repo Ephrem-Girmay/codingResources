@@ -59,8 +59,31 @@ html {
 	color: #35323e;
 	font-size: 62.5%;
 	line-height: 1;
+	scroll-behavior: smooth;
+	transition: 1s;
 }
-
+.home_btn {
+	font-size: 1.9rem;
+	text-decoration: none;
+	background-color: #ff5f6d;
+	color: #fff;
+	padding: 2rem 3rem;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	z-index: 999;
+	position: fixed;
+	cursor: pointer;
+	border-top-left-radius: 15px;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+}
+.home_btn:hover {
+	background-color: #007bb6;
+}
 /* Hero section */
 .section-hero {
 	background-image: url(img/ephrem.png), linear-gradient(#000428, #004e92);
@@ -149,6 +172,9 @@ ul a {
 	-moz-transition: 0.3s;
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
+}
+.tech {
+	width: 15rem;
 }
 ul a:hover {
 	border-radius: 0;
