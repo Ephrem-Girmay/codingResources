@@ -116,6 +116,7 @@ html {
 	border: none;
 	box-shadow: inset 1.2rem 4px 0 rgb(68, 66, 66);
 	border: 2px rgb(255, 255, 255) solid;
+	cursor: pointer;
 }
 
 .home_btn:hover {
