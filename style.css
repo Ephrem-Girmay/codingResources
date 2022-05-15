@@ -1,5 +1,26 @@
 /** @format */
-
+:root {
+	--background-colorr: rgb(215, 209, 209);
+	--background-color: #fff;
+	--text-color: #000;
+}
+[data-theme="dark"] {
+	--background-color: #252526;
+	--background-colorr: #1c2225;
+	--text-color: #fff;
+}
+.section {
+	background-color: var(--background-color);
+	color: var(--text-color);
+	min-height: 60vh;
+	padding: 5rem;
+}
+.section-two {
+	background-color: var(--background-colorr);
+	color: var(--text-color);
+	min-height: 60vh;
+	padding: 5rem;
+}
 /* Re-usable */
 .flex-row {
 	display: flex;
@@ -49,7 +70,8 @@ p {
 	box-sizing: border-box;
 }
 body {
-	background-color: rgb(247, 247, 247);
+	background-color: var(--background-color);
+	color: var(--text-color);
 
 	position: relative;
 }
@@ -81,6 +103,21 @@ html {
 	-ms-transition: 0.2s;
 	-o-transition: 0.2s;
 }
+.dark_mood {
+	position: absolute;
+	position: fixed;
+	z-index: 999;
+	height: 3rem;
+	top: 2rem;
+	right: 2rem;
+	border-radius: 50%;
+	font-size: 1.6rem;
+	width: 3rem;
+	border: none;
+	box-shadow: inset 1.2rem 4px 0 rgb(68, 66, 66);
+	border: 2px rgb(255, 255, 255) solid;
+}
+
 .home_btn:hover {
 	background-color: #007bb7;
 }
@@ -203,14 +240,7 @@ ion-icon {
 	display: flex;
 	margin-bottom: 2rem;
 }
-.section {
-	background-color: rgb(240, 241, 246);
-	min-height: 60vh;
-	padding: 5rem;
-}
-.section2 {
-	background-color: rgb(227, 228, 229);
-}
+
 .section-Wrapp {
 	max-width: 100%;
 	display: grid;
@@ -224,7 +254,7 @@ ion-icon {
 	gap: 2rem;
 }
 .card img {
-	width: 4rem;
+	width: 5rem;
 }
 .card a {
 	font-size: 2rem;

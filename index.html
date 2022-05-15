@@ -7,7 +7,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="#" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="/light-dark-mode/style.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="stylesheet" href="queries.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,11 +28,35 @@
 			href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- <script type="text/javascript">
+			// Wait for document to load
+			document.addEventListener("DOMContentLoaded", function (event) {
+				document.documentElement.setAttribute("data-theme", "light");
+				// Get our button switcher
+				var themeSwitcher = document.getElementById("theme-switcher");
+
+				// When our button gets clicked
+				themeSwitcher.onclick = function () {
+					// Get the current selected theme, on the first run
+					// it should be `light`
+					var currentTheme =
+						document.documentElement.getAttribute("data-theme");
+
+					// Switch between `dark` and `light`
+					var switchToTheme = currentTheme === "dark" ? "light" : "dark";
+
+					// Set our currenet theme to the new one
+					document.documentElement.setAttribute("data-theme", switchToTheme);
+				};
+			});
+		</script> -->
 
 		<title>Ephrem's Tool-Box</title>
 	</head>
 	<body>
 		<!-- Hero -->
+		<button class="dark_mood" id="theme-switcher"></button>
+
 		<a href="#home" class="home_btn">Move Top</a>
 		<section class="section-hero" id="home">
 			<img src="img/EphremLogoWhite.png" alt="" />
@@ -94,7 +119,7 @@
 		</header>
 		<main>
 			<!-- Tools -->
-			<section class="section" id="tools">
+			<section class="section-two" id="tools">
 				<h3>
 					<ion-icon name="hammer-outline"></ion-icon> <br />
 					DEVELOPMENT TOOLS
@@ -137,7 +162,7 @@
 
 			<!-- Tech trends -->
 
-			<section class="section" id="tools">
+			<section class="section" id="tech">
 				<h3>
 					<ion-icon name="trending-up-outline"></ion-icon> <br />RESOURCES TO
 					FOLLOW TECH TRENDS
@@ -189,7 +214,7 @@
 
 			<!-- HTML -->
 
-			<section class="section section2" id="html">
+			<section class="section-two" id="html">
 				<h3><ion-icon name="logo-html5"></ion-icon> <br />HTML5 RESOURCES</h3>
 
 				<div class="section-Wrapp">
@@ -346,7 +371,7 @@
 
 			<!-- JAVASCRIPT -->
 
-			<section class="section section2" id="js">
+			<section class="section-two" id="js">
 				<h3>
 					<ion-icon name="logo-nodejs"></ion-icon> <br />JAVASCRIPT RESOURCES
 				</h3>
@@ -572,7 +597,7 @@
 
 			<!-- fonts -->
 
-			<section class="section section2" id="fonts">
+			<section class="section-two" id="fonts">
 				<h3>
 					<ion-icon name="text-outline"></ion-icon> <br />FONTS AND TYPOGRAPHY
 					TOOLS
@@ -800,7 +825,7 @@
 
 			<!-- IMAGES -->
 
-			<section class="section section2" id="images">
+			<section class="section-two" id="images">
 				<h3>
 					<ion-icon name="images-outline"></ion-icon> <br />IMAGES AND VIDEOS
 				</h3>
@@ -1036,7 +1061,7 @@
 
 			<!-- DESIGN INSPIRATION -->
 
-			<section class="section section2" id="design">
+			<section class="section-two" id="design">
 				<h3>
 					<ion-icon name="sunny-outline"></ion-icon> <br />FIND DESIGN
 					INSPIRATION
@@ -1188,7 +1213,7 @@
 
 			<!-- TESTING -->
 
-			<section class="section section2" id="test">
+			<section class="section-two" id="test">
 				<h3>
 					<ion-icon name="speedometer-outline"></ion-icon> <br />TESTING,
 					OPTIMIZATION AND DEPLOYMENT
