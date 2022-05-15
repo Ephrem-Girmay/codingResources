@@ -105,13 +105,13 @@ html {
 }
 .dark_mood {
 	position: absolute;
-	position: fixed;
-	z-index: 999;
-	height: 3rem;
 	top: 2rem;
 	right: 2rem;
+	position: fixed;
+	width: 3rem;
+	height: 3rem;
 	border-radius: 50%;
-	font-size: 1.6rem;
+	z-index: 999;
 	width: 3rem;
 	border: none;
 	box-shadow: inset 1.2rem 4px 0 rgb(68, 66, 66);
